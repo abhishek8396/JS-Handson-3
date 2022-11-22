@@ -73,6 +73,40 @@
                 }  
             };
             
-            </pre>               
+            </pre> 
+        <p>Check whether a Number is a prime or not.
+            Write a program which takes  a number from user and check whether number is prime number or not a prime number.</p>
+        <pre>
+            const Prime_Check = (N) => 
+            {
+              var count=0;
+                 for(let i = 1; i<=N; i++){
+                   if(N%i===0){
+                     count++;
+                   }
+                   if(count===2){
+                     return("YES")}
+                   else{
+                     return("NO")
+                   }
+                 }
+                
+            };
+            
+            </pre>
+        <p>Find the number of digits
+            Take a number from the user and print the count of digits in that number.</p>   
+        <pre>
+            const Find_Digits = (N) => 
+            {
+                 let sum = 0;
+                 while(N > 0){
+                   N = Math.floor(N/10)
+                   sum++;
+                 }
+                 return sum;
+            };
+            
+            </pre>                           
 </body>
 </html>
