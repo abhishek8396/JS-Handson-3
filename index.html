@@ -122,6 +122,53 @@
                    }
             };
             
-            </pre>                                 
+            </pre>  
+        <p>Find the Fives.
+          Among all the digits from 0−9, PrepBuddy likes number 5. He has a number and wants you to find out the number of times 5 occurred in the given number.</p>  
+        <pre>
+          const Find_Five = (N) => 
+          {
+             var count = 0;
+             while(N>0){
+               if(N%10===5){
+                 count++;
+                 N=parseInt(n/10);
+               }
+             }
+             return count;
+          };
+          
+          </pre>    
+        <p>Find the sum of the digits of a given number.
+          Write a program that takes a number from the user and get the sum of the digits present in the number.</p>  
+        <pre>
+          const Number_Sum = (N) => 
+          {
+            var sum = 0;
+              while (N > 0){
+                  sum = sum + N % 10;
+                  N = parseInt(N / 10);
+              }
+              return sum;
+          };
+          
+          </pre>  
+        <p>Print the Pattern.
+          Write a program which ask user for no of lines and print a pattern using an asterik .</p> 
+        <pre>
+          const Print_pattern = (N) => 
+          {
+            let str = "";
+            for(let i = 1; i <= N; i++){
+              for(let j=0; j < i; j++){
+                str += "*"
+              }
+              str += "\n";
+            }
+            console.log(str);
+          
+          };
+          
+          </pre>                              
 </body>
 </html>
